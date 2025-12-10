@@ -54,7 +54,7 @@ export default function Home() {
       setAuthState('hotel-signup')
     } else if (role === 'ngo') {
       setAuthState('ngo-signup')
-    } else if (role === 'delivery') {
+    } else if (role === 'delicd covery') {
       setAuthState('delivery-signup')
     }
   }
@@ -170,3 +170,6 @@ export default function Home() {
     </>
   )
 }
+git config --global http.postBuffer 524288000
+git config --global http.maxRequests 100
+git push origin master
