@@ -54,7 +54,7 @@ export default function Home() {
       setAuthState('hotel-signup')
     } else if (role === 'ngo') {
       setAuthState('ngo-signup')
-    } else if (role === 'delicd covery') {
+    } else if (role === 'delivery') {
       setAuthState('delivery-signup')
     }
   }
@@ -127,7 +127,7 @@ export default function Home() {
 
   if (userRole === 'ngo' && !ngoVerified) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 to-yellow-50 dark:from-gray-950 dark:to-gray-900">
+      <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-orange-50 to-yellow-50 dark:from-gray-950 dark:to-gray-900">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Access Restricted</h2>
           <p className="text-gray-600 dark:text-gray-400 mb-6">Only verified NGOs can access this dashboard.</p>
@@ -150,7 +150,7 @@ export default function Home() {
             <Button 
               variant="outline" 
               size="sm" 
-              className="bg-gradient-to-r from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 hover:shadow-lg transition-all duration-200 transform hover:scale-105"
+              className="bg-linear-to-r from-orange-50 to-amber-50 dark:from-orange-900/20 dark:to-amber-900/20 hover:shadow-lg transition-all duration-200 transform hover:scale-105"
             >
               Top Donors
             </Button>
@@ -161,7 +161,7 @@ export default function Home() {
           <Button 
             variant="outline" 
             size="sm" 
-            className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 hover:shadow-lg transition-all duration-200 transform hover:scale-105"
+            className="bg-linear-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 hover:shadow-lg transition-all duration-200 transform hover:scale-105"
           >
             Analytics
           </Button>
@@ -170,6 +170,3 @@ export default function Home() {
     </>
   )
 }
-git config --global http.postBuffer 524288000
-git config --global http.maxRequests 100
-git push origin master
